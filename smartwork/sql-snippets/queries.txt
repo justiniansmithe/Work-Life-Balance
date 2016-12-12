@@ -1,0 +1,9 @@
+/* Returns rows from the last 7 days; run this on Monday */
+
+SELECT * FROM smartwork
+WHERE date > (SELECT DATETIME('now', '-7 day'))
+
+/* Returns average of ratings from the last 7 days*/
+
+SELECT AVG(ratings) FROM smartwork
+WHERE date > (SELECT DATETIME('now', '-7 day'))

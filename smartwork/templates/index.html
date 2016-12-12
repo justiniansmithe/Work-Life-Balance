@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    .green {background-color: #00ff00; width:25%; }
+    .red {background-color: #ff0000; width:25%; }  
+    .yellow {background-color: #ffff00; width:25%; }
+  </style>
+
+</head>
+
+
+<body>
+<H3>How would you rate your work-life balance for this week?</H3>
+
+<br />
+
+  <form method="POST" action="/send">
+  <div class="form-group">
+    <div class="green"><input type="radio" name="ratings" id="rat3" value="3"> Balanced </div>
+    <div class="yellow"><input type="radio" name="ratings" id="rat2" value="2"> Moderate Impact </div>
+    <div class="red"><input type="radio" name="ratings" id="rat1" value="1"> Poor </div>
+  </div>
+  
+  <H3> Comments </H3>
+
+  <textarea name="comments" rows="5" cols="75"></textarea>
+  <br />
+  <br />
+
+  <select name="team_id" default="0">
+    <option value="0"> All</option>
+  </select>
+  <input class="btn btn-primary" type="submit" value="submit">
+</form>
+<br />
+
+</body>
+</html>
+
