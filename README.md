@@ -1,5 +1,5 @@
 # smartwork
-Basic website that posts data from forms and creates a sqlite database. 
+website that posts data from forms and creates a sqlite database. 
 
 ![alt tag](screenshots/smartwork-site.png "Front End")
 
